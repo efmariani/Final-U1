@@ -1,0 +1,65 @@
+[
+  {
+    "id": 1,
+    "title": "La Biblia",
+    "author": "Desconocido",
+    "genre": "Desconocido",
+    "year": 0,
+    "cost": 5.3,
+    "price": 8
+  },
+  {
+    "id": 2,
+    "title": "Don Quijote de la Mancha",
+    "author": "Miguel de Cervantes Saavedra",
+    "genre": "Novela",
+    "year": 1605,
+    "cost": 10,
+    "price": 15
+  },
+  {
+    "id": 4,
+    "title": "Yes",
+    "author": "yo",
+    "genre": "xxx",
+    "year": 1985,
+    "cost": 52.3,
+    "price": 80
+  },
+  {
+    "id": 3,
+    "title": "flia",
+    "author": "Catalina",
+    "genre": "Novela",
+    "year": 2019,
+    "cost": 10,
+    "price": 80
+  },
+  {
+    "id": 5,
+    "title": "flia",
+    "author": "Catalina",
+    "genre": "Novela",
+    "year": 2019,
+    "cost": 10,
+    "price": 80
+  },
+  {
+    "id": 6,
+    "title": "hola",
+    "author": "Desconocido",
+    "genre": "Desconocido",
+    "year": null,
+    "cost": null,
+    "price": null
+  },
+  {
+    "id": 7,
+    "title": "100 años",
+    "author": "Facundo m",
+    "genre": "educaivo",
+    "year": "1212",
+    "cost": "200",
+    "price": "100"
+  }
+]
