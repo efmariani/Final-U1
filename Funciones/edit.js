@@ -1,6 +1,8 @@
+// Es buena práctica que los módulos y librerías se carguen en el top level del archivo js. Es decir acá en fila:
+// const fs = require('fs')
+// const otraLibreriaOModulo = require('otraLibreriaOModulo')
 
-
-function Edit(id,title='Desconocido',author='Desconocido',genere='Desconocido',year=null,cost=null,price=null){
+function Edit(id,title='Desconocido',author='Desconocido',genere='Desconocido',year=null,cost=null,price=null){ // Esta validación está bien, pero recordá que si no le pasás un argumento al parámetro de la función, este no tiene valor de todas maneras. Y podés usar eso para hacer la validación.
     //Importo BBDD
     const fs=require('fs')
     const Libros=fs.readFileSync('./Data/Data.json','utf8')
@@ -26,6 +28,7 @@ function Edit(id,title='Desconocido',author='Desconocido',genere='Desconocido',y
     for (i=0;i<librosData.length;i++){
         ids.push(librosData[i].id)
     }
+    // Acá esto está bien, pero podés usar un método de array de js para hacerlo más fácil
 
     //Verifico que el id ingresado exista en la lista y obtengo su posicion.
     if (ids.includes(id)==false){
@@ -41,8 +44,21 @@ function Edit(id,title='Desconocido',author='Desconocido',genere='Desconocido',y
         "genre":genere,
         "year":year,
         "cost":cost,
-        "price":price
+        "price":price,
     }
+    // Los nombres de propiedades no hace falta que estén en string, lo podés envolver en string cuando necesitás que tengan un espacio.
+    // Ex: "price plus": price
+    //
+    // Después si el nombre de propiedad es lo mismo que el nombre del valor, podés hacer esto:
+    //     let nuevoLibro = {
+    //      id,
+    //      title,
+    //      author,
+    //      genre,
+    //      year,
+    //      cost,
+    //      price,
+    //    {
     
     //ingreso el articulo modificado.
     librosData[ID]=nuevoLibro

@@ -1,9 +1,11 @@
 const Read=require('./Funciones/read')
 const Delete=require('./Funciones/delete.js')
 const New=require('./Funciones/new')
-const Edit=require('./Funciones/edit')
-const { assert } = require('console')
+const Edit=require('./Funciones/edit') // Ojo con la indentación: "const Edit = require('./Funciones/edit')"
+const { assert } = require('console') // Si no lo usás no lo importes/exportes!
 
+// Muy bien esta parte, hay unos temitas de indentación: https://es.javascript.info/article/coding-style/code-style.svg
+// Pero bien indentado de todas maneras.
 
 switch (process.argv[2]){
     case 'Read':
