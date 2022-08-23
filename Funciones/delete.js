@@ -1,3 +1,4 @@
+// const fs = require('fs')
 
 function Delete(id){
     const fs=require('fs')
@@ -9,6 +10,8 @@ function Delete(id){
 
     ids=[]
     for (i=0;i<librosData.length;i++){
+        // Si este algoritmo se repite varias veces en tu código, lo podés pasar a una función para hacer ahorrar código y que tu código sea más reutilizable.
+        // Ex: lo podés pasar a una función.
         ids.push(librosData[i].id)
     }
 
